@@ -278,7 +278,7 @@ const IndexPage = () => (
 
     <div className="mt-64 text-center">
       entreprises scale with Sparkels
-      <div className="flex h-10 w-full place-content-around mt-8">
+      <div className="flex h-10 w-full place-content-between mt-8">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
           <path
             fill=" #ffffff"
