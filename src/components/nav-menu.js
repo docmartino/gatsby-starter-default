@@ -90,11 +90,11 @@ const MenuTop = () => {
         </div>
         <div className="hidden sm:block mt-2" id='btnMenu2'>
           {" "}
-          <button className="bg-[#7755cc] text-white font-bold py-2 px-4 rounded-sm w-32 mx-2">
+          <button className="bg-[#7755cc] text-white font-bold py-2 px-4 rounded-md w-32 mx-2">
             {" "}
             Log in{" "}
           </button>
-          <button className="bg-[#0eb4d1] text-white font-bold py-2 px-4 rounded-sm w-32 ml-2">
+          <button className="bg-[#0eb4d1] text-white font-bold py-2 px-4 rounded-md w-32 ml-2">
             {" "}
             Get started{" "}
           </button>
