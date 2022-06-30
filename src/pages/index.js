@@ -1,82 +1,18 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import img from "../images/undraw_social_serenity_vhix.svg"
 import code from "../images/code.png"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+import List from "../components/list-check.js"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className="">
-      <h1 className="text-6xl">
+      <h1 className="text-6xl my-12">
         Build Digital Promotions
         <br />
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#af613a] to-[#0eb4d1]">
@@ -84,193 +20,46 @@ const IndexPage = () => (
         </span>{" "}
       </h1>
     </div>
-    <div className="flex w-full">
+    <div className="flex">
       <div className="w-1/2 flex flex-col">
-        <p> One API to build personalized:</p>
-        <div className="flex">
-          <ul className="pl-0 ml-0">
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>{" "}
-              Coupons
-            </li>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>{" "}
-              Gifts Cards
-            </li>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>{" "}
-              Referals
-            </li>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>{" "}
-              Giveaways
-            </li>
-          </ul>
-          <ul>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              Product Bunding
-            </li>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              Loyalty campaigns
-            </li>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              In-cart promotions
-            </li>
-            <li className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=" #1d2d50"
-                stroke-width="2"
-              >
-                <path
-                  fill="#0eb4d1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              Digital Wallets
-            </li>
-          </ul>
-        </div>
-
+        <List />
         <button className="bg-[#0eb4d1] text-white font-bold py-2 px-4 rounded-md w-32">
           {" "}
           Get started{" "}
         </button>
       </div>
-      <div className="w-1/2 ">
-      <div className=" opacity-50 bg-gradient-to-r from-[#1d2d50] to-[#af613a] absolute top-64 right-96 rounded-full h-96 w-96">
-        </div>
+      <div className="w-1/2 relative">
+        {/* CEERCLE DECOUPAGE */}
+        <div className=" z-0 opacity-50 bg-gradient-to-r from-[#1d2d50] to-[#af613a] absolute top-[-20px] right-[-10px] rounded-full h-[450px] w-[450px]"></div>
 
-        <div className="h-64  bg-white rounded-md  font-bold relative">
-          <div className="flex">
-            <img src={img} alt="img" className="h-24 pt-5 pl-5" />
-            <div className="text-black mt-6 ml-5 text-lg font-bold">
-              {" "}
+        {/* CARD BLANCHE  */}
+        <div className=" z-20 bg-white rounded-md font-bold relative p-7 w-5/6">
+          <div className="flex space-x-3 items-center">
+            <img src={img} alt="img" className="h-24" />{" "}
+            <p className="text-black text-xl font-bold">
               Welcome Nopon Discount
-              <p className="text-gray-400 text-xs">Expire in 5 days</p>{" "}
-            </div>
+              <br />
+              <span className="text-gray-400 text-lg mt-1">
+                Expire in 5 days
+              </span>
+            </p>{" "}
           </div>
-          <div className="text-gray-400 pl-5">
+          <div className="text-gray-400 ">
             Here is your 10€ discount voucher :{" "}
             <code className="bg-[#0eb4d1] text-gray-600">hello10</code>
             <br />
             Make an order for more than 50€ to use the code.
           </div>
-          <div className="pl-5 mt-3">
+          <div className=" mt-3">
             <button className="bg-[#7755cc] text-white font-bold py-2 px-4 rounded-md w-32">
               {" "}
               Go to store{" "}
             </button>
           </div>
-          <div className="bg-[#1d2d50] shadow shadow-black absolute top-48 left-56 rounded-md w-64 align-middle">
+          {/* IMAGE BLEU  */}
+          <div className=" z-10 flex bg-[#1d2d50] shadow shadow-black absolute top-52 left-56 rounded-md w-80 h-64 justify-center">
             {" "}
-            <img src={code} alt="img" className="mb-0 p-10" />
+            <img src={code} alt="img" className="p-10 h-64" />
           </div>
         </div>
       </div>
