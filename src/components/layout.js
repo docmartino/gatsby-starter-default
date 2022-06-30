@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           // maxWidth: `var(--size-content)`,
           // padding: `var(--size-gutter)`,
         }}
-        className='md:m-10'
+        className='md:m-10  lg:m-auto'
       >
         <main>{children}</main>
         <footer>
