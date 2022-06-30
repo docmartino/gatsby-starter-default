@@ -57,8 +57,7 @@ const IndexPage = () => (
             </button>
           </div>
           {/* IMAGE BLEU  */}
-          <div className=" z-10 flex bg-[#1d2d50] shadow shadow-black absolute right-5 sm:top-52 sm:left-56 bottom-[-245px] rounded-md sm:w-80 w-[250px] h-64 justify-center">
-            {" "}
+          <div className="z-10 flex bg-[#1d2d50] shadow shadow-black absolute rounded-md w-[250px] bottom-[-245px] h-64 right-5   md:left-44 md:top-72 md:w-[225px]     lg:top-52 lg:left-56 lg:w-80   justify-center">
             <img src={code} alt="img" className="p-10 h-64" />
           </div>
         </div>

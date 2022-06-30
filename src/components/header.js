@@ -4,9 +4,9 @@ import MenuTop from "../components/nav-menu"
 
 const Header = ({ siteTitle }) => (
   <header
-    className="py-2 "
+    className="py-2 md:m-10"
     style={{
-      margin: `0 auto`,
+      // margin: `0 auto`,
       maxWidth: `1200px`,
       // padding: `var(--space-4) var(--size-gutter)`,
       // display: `flex`,

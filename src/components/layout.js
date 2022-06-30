@@ -28,11 +28,12 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
-          margin: `0 auto`,
+          // margin: `0 auto`,
           maxWidth: `1200px`,
           // maxWidth: `var(--size-content)`,
           // padding: `var(--size-gutter)`,
         }}
+        className='md:m-10'
       >
         <main>{children}</main>
         <footer>

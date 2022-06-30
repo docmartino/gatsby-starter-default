@@ -21,7 +21,7 @@ const MenuTop = () => {
             className="max-h-5 my-2 mx-2 sm:mr-2 sm:ml-0"
             alt="star"
           /> Sparkles{" "}
-          <div className="sm:hidden absolute right-0 mr-5">
+          <div className="lg:hidden absolute right-0 mr-5 md:left-[660px]">
             {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ const MenuTop = () => {
             </svg>
           </div>
         </div>
-        <div className="hidden sm:block" id='btnMenu'>
-          <ul className="sm:flex m-2">
+        <div className="hidden lg:block" id='btnMenu'>
+          <ul className="lg:flex m-2">
             <li className="m-2">
               <Link to="/" className="flex">
                 Product
@@ -88,7 +88,7 @@ const MenuTop = () => {
             </li>
           </ul>
         </div>
-        <div className="hidden sm:block mt-2" id='btnMenu2'>
+        <div className="hidden lg:block mt-2" id='btnMenu2'>
           {" "}
           <button className="bg-[#7755cc] text-white font-bold py-2 px-4 rounded-md w-32 mx-2">
             {" "}
